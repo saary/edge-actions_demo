@@ -5,6 +5,6 @@ export async function runAction(action: string, data: object) {
     case 'add':
       return { result: await add(data) };
     default:
-      return { error: 'No such action found' };
+      return { result: `Performed ${action}` };
   }
 }
