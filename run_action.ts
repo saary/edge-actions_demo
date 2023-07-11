@@ -3,7 +3,8 @@ import { add } from 'https://raw.githubusercontent.com/saary/edge-actions_demo/m
 export async function runAction(action: string, data: object) {
   switch (action) {
     case 'add':
-      return { result: await add(data) }
+      // const res = await add(data);
+      return { result: 3 }
     default:
       return { error: 'No such action found' };
   }
